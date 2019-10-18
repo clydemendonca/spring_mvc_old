@@ -9,12 +9,12 @@ import com.pluralsight.model.Exercise;
 @Controller
 public class MinutesController {
 
-	@RequestMapping(value="/addMinutes")
+	@RequestMapping(value = "/addMinutes")
 	public String addMinutes(@ModelAttribute("exercise") Exercise exercise) {
-		
+
 		System.out.println(exercise.getMinutes() + "");
-		
+
 		return "addMinutes";
 	}
-	
+
 }
